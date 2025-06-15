@@ -13,67 +13,76 @@
             <span id="tagline">Git y Github</span>
         </div>
         <div id="post">
-            <h1>Alumn@: [Tu nombre o iniciales]</h1>
+            <h1>Alumno: Antonio</h1>
             <ol>
                 <li>
                     <h3>¿Que es un sistema de control de versiones?</h3>
-                    [Pon tu respuesta]
+                    Es una herramienta que nos deja guardar y gestionar los cambios que se hacen en los archivos de un proyecto .Sirve para ver qué se modifico, cuando y quien lo hizo. También permite volver a versiones anteriores.
                 </li>
                 <li>
                     <h3>¿Cual es la diferencia entre git y github?</h3>
-                    [Pon tu respuesta]
+                    Git es el sistema de control de versiones que se usa en local para gestionar los cambios del proyecto. GitHub es una plataforma online donde se almacenan repositorios Git.
                 </li>
                 <li>
                     <h3>¿Cómo creo una rama en git?</h3>
-                    [Pon tu respuesta]
+                    Usando el comando `git checkout -b nombre_de_la_rama`
                 </li>
                 <li>
                     <h3>¿Cómo clono un repositorio?</h3>
-                    [Pon tu respuesta]
+                    Con el comando `git clone url_del_repositorio`
                 </li>
                 <li>
                     <h3>¿Cómo puedo bajar los ultimos cambios de un repositorio?</h3>
-                    [Pon tu respuesta]
+                    Usando `git pull origin nombre_de_la_rama`
                 </li>
                 <li>
                     <h3>¿Cómo puedo gener un tag?</h3>
-                    [Pon tu respuesta]
+                    Con el comando `git tag nombre_del_tag`
                 </li>
                 <li>
                     <h3>Cómo hago una mezcla de ramas?</h3>
-                    [Pon tu respuesta]
+                    Con el comando `git merge nombre_de_la_rama`
                 </li>
                 <li>
                     <h3>¿Cómo puedo moverme a un commit especifico?</h3>
-                    [Pon tu respuesta]
+                    Primero localizas el ID del commit con `git log`, luego haces:`git checkout ID_del_commit`
                 </li>
                 <li>
                     <h3>¿Cómo puedo borrar una rama?</h3>
-                    [Pon tu respuesta]
+                    Si es una rama local: `git branch -d nombre_de_la_rama`  
+                    Si es una rama remota: `git push origin --delete nombre_de_la_rama`
                 </li>
                 <li>
                     <h3>¿Cómo puedo borrar un tag?</h3>
-                    [Pon tu respuesta]
+                    Para borrar un tag local: `git tag -d nombre_del_tag`  
+                    Para borrarlo también en GitHub: `git push origin --delete nombre_del_tag`
                 </li>
                 <li>
                     <h3>¿Cómo puedo ver los cambios que estan por enviarse al repositorio?</h3>
-                    [Pon tu respuesta]
+                    Con el comando `git status`
                 </li>
                 <li>
                     <h3>¿Para que sirve el comando <em>git remote -v?</em></h3>
-                    [Pon tu respuesta]
+                    Muestra las direcciones url asociadas al repositorio remoto. Sirve para verificar a que repositorio estas conectado y desde donde se hara el push o pull
                 </li>
                 <li>
                     <h3>¿Cómo le digo a git cual es mi email y correo?</h3>
-                    [Pon tu respuesta]
+                    git config --global user.name "Antonio"
+                    git config --global user.email "antonio@email.com"
                 </li>
                 <li>
                     <h3>¿Cuales son los pasos para conectar git con github?</h3>
-                    [Pon tu respuesta]
+                   1. Crear un repositorio nuevo en GitHub<br>
+                   2. Copiar la URL del repositorio<br>
+                   3. En tu proyecto local, inicializar Git con git init<br>
+                   4. Conectar el repositorio remoto con git remote add origin url<br>
+                   5. Confirmar con git remote -v<br>
+                   6. Subir los archivos con git push -u origin main
+
                 </li>
                 <li>
                     <h3>¿Cómo puedo crear un alias en git?</h3>
-                    [Pon tu respuesta]
+                    Se crea con el comando git config --global alias.nombre "comando"
                 </li>
             </ol>
         </div>
